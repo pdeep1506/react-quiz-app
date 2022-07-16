@@ -6,10 +6,10 @@ import './Home.css'
 import Categories from '../../../Data/Category'
 import  Difficulty  from '../../../Data/Difficulties'
 import ErrorMessage from '../../ErrorMessage/ErrorMessage'
-const Home = () => {
+const Home = ({name,setname}) => {
   const [category, setcategory] = useState('')
   const [difficulty, setdifficulty] = useState('')
-  const [name, setname] = useState('')
+  
   const [error, seterror] = useState('')
   // console.log(category,difficulty)
   const handleSubmit = ()=>{
