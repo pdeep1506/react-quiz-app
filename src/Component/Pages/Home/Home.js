@@ -1,11 +1,11 @@
 import { TextField,MenuItem,Button } from '@mui/material'
 import React,{useState} from 'react'
-import quiz from '../../images/quiz.svg'
+import quiz from '../../../images/quiz.svg'
 import './Home.css'
 
-import Categories from '../../Data/Category'
-import  Difficulty  from '../../Data/Difficulties'
-import ErrorMessage from '../ErrorMessage/ErrorMessage'
+import Categories from '../../../Data/Category'
+import  Difficulty  from '../../../Data/Difficulties'
+import ErrorMessage from '../../ErrorMessage/ErrorMessage'
 const Home = () => {
   const [category, setcategory] = useState('')
   const [difficulty, setdifficulty] = useState('')

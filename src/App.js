@@ -4,8 +4,8 @@ import './App.css';
 
 import {BrowserRouter,Route,Routes} from 'react-router-dom'
 import Footer from './Component/Footer/Footer';
-import  Home  from './Component/Home/Home';
-import Quiz from './Component/Quiz/Quiz';
+import  Home  from './Component/Pages/Home/Home';
+import Quiz from './Component/Pages/Quiz/Quiz';
 import Result from './Component/Result/Result'
 function App() {
   return (
