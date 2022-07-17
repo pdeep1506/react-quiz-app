@@ -6,7 +6,10 @@ import './Home.css'
 import Categories from '../../../Data/Category'
 import  Difficulty  from '../../../Data/Difficulties'
 import ErrorMessage from '../../ErrorMessage/ErrorMessage'
-const Home = ({name,setname}) => {
+
+import { useNavigate } from 'react-router-dom'
+const Home = ({name,setname,fetchQuestions}) => {
+  const navigate = useNavigate();
   const [category, setcategory] = useState('')
   const [difficulty, setdifficulty] = useState('')
   
@@ -20,6 +23,8 @@ const Home = ({name,setname}) => {
     else{
       console.log(error)
       seterror(false)
+      fetchQuestions(category,difficulty)
+      navigate('/quiz')
     }
   }
   return (
