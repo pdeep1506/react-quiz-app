@@ -25,8 +25,8 @@ function App() {
     
       <Routes>
           <Route path='/' element={<Home name={name} setname={setname} fetchQuestions={fetchQuestions}></Home>}></Route>
-          <Route path='/quiz' element={<Quiz name={name} questions={questions} score={score} setscore={score} setquestions={setquestions}></Quiz>}></Route>
-          <Route path='/result' element={<Result></Result>}></Route>
+          <Route path='/quiz' element={<Quiz name={name} questions={questions} score={score} setscore={setscore} setquestions={setquestions}></Quiz>}></Route>
+          <Route path='/result' element={<Result name={name} score={score}></Result>}></Route>
       
       </Routes>
     
